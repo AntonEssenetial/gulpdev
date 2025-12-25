@@ -1,0 +1,727 @@
+{
+	"pageList": {
+		"data": [
+			{
+				"title": "Home",
+				"url": "home"
+			},
+			{
+				"title": "Security",
+				"url": "security"
+			},
+			{
+				"title": "About",
+				"url": "about"
+			},
+			{
+				"title": "Investments",
+				"url": "investments"
+			},
+			{
+				"title": "Partnership",
+				"url": "partnership"
+			},
+			{
+				"title": "Faq",
+				"url": "faq"
+			},
+			{
+				"title": "Support",
+				"url": "support"
+			},
+			{
+				"title": "Contacts",
+				"url": "contacts"
+			},
+			{
+				"title": "Rules",
+				"url": "rules"
+			},
+			{
+				"title": "Registration",
+				"url": "registration"
+			},
+			{
+				"title": "Cabinet01",
+				"url": "cabinet01"
+			},
+			{
+				"title": "Cabinet02",
+				"url": "cabinet02"
+			},
+			{
+				"title": "Cabinet03",
+				"url": "cabinet03"
+			},
+			{
+				"title": "Cabinet04",
+				"url": "cabinet04"
+			},
+			{
+				"title": "Cabinet05",
+				"url": "cabinet05"
+			},
+			{
+				"title": "Cabinet06",
+				"url": "cabinet06"
+			},
+			{
+				"title": "Cabinet07",
+				"url": "cabinet07"
+			},
+			{
+				"title": "Cabinet08",
+				"url": "cabinet08"
+			},
+			{
+				"title": "Cabinet09",
+				"url": "cabinet09"
+			},
+			{
+				"title": "Cabinet10",
+				"url": "cabinet10"
+			},
+			{
+				"title": "Cabinet11",
+				"url": "cabinet11"
+			},
+			{
+				"title": "Cabinet12",
+				"url": "cabinet12"
+			},
+			{
+				"title": "Elements",
+				"url": "elements"
+			}
+		]
+	},
+	"breadCrumbs": {
+		"default": [
+			{
+				"type": "link",
+				"title": "Home"
+			},
+			{
+				"type": "link",
+				"title": "Category"
+			},
+			{
+				"type": "link",
+				"title": "Subcategory"
+			},
+			{
+				"title": "Page"
+			}
+		]
+	},
+	"config": {
+		"projectName": "Nubiotic",
+		"lang": "en",
+		"path": {
+			"favicons": "assets/favicons",
+			"styles": "assets/css",
+			"scripts": "assets/javascripts",
+			"images": "assets/images",
+			"fonts": "assets/fonts"
+		}
+	},
+	"footerNav": {
+		"default": [
+			{
+				"title": "Окомпании",
+				"url": "about"
+			},
+			{
+				"title": "Правила компании",
+				"url": "rules"
+			},
+			{
+				"title": "Политика конфиденциальности",
+				"url": "policy"
+			},
+			{
+				"title": "FAQ",
+				"url": "faq"
+			},
+			{
+				"title": "Новости",
+				"url": "news"
+			},
+			{
+				"title": "Контакты",
+				"url": "contacts"
+			}
+		],
+		"serv": [
+			{
+				"title": "Инвесторам",
+				"url": "investments"
+			},
+			{
+				"title": "Партнерам",
+				"url": "referral-program"
+			},
+			{
+				"title": "Гарантии",
+				"url": "guarantees"
+			}
+		]
+	},
+	"head": {
+		"default": {
+			"title": "Default title",
+			"mobile": true,
+			"meta": {
+				"author": "unknown",
+				"description": "Put value here",
+				"keywords": "Put value here"
+			},
+			"og": {
+				"url": "https://",
+				"description": "Description",
+				"image": {
+					"path": "assets/images/content/preview.png",
+					"type": "image/png",
+					"width": 500,
+					"height": 300
+				}
+			}
+		},
+		"index": {
+			"title": "Список",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"home": {
+			"title": "Home",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"investments": {
+			"title": "Investments",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"investing": {
+			"title": "Investing",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"about": {
+			"title": "About",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"affiliate": {
+			"title": "Affiliate",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"getstarted": {
+			"title": "Get started",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"security": {
+			"title": "Security",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"partnership": {
+			"title": "Partnership",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"faq": {
+			"title": "Faq",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"support": {
+			"title": "Support",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"registration": {
+			"title": "Registration",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"cabinet": {
+			"title": "Cabinet",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"terms": {
+			"title": "Terms",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"payouts": {
+			"title": "Payouts",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"error": {
+			"title": "Header location error",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"news": {
+			"title": "News",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"reviews": {
+			"title": "Reviews",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"investmentsoffer": {
+			"title": "Investments offer",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"guarantees": {
+			"title": "Guarantees",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"protection": {
+			"title": "Protection",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"beginners": {
+			"title": "Beginners",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"cryptocurrencies": {
+			"title": "Cryptocurrencies",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"howto": {
+			"title": "How to start",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"exchangers": {
+			"title": "Exchangers",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"investors": {
+			"title": "Investors",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"help": {
+			"title": "Help center",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"contacts": {
+			"title": "Contacts",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		},
+		"contact": {
+			"title": "Contact",
+			"mobile": true,
+			"meta": "default",
+			"og": "default"
+		}
+	},
+	"mainMenu": {
+		"default": [
+			{
+				"title": "Home",
+				"url": "home",
+				"submenu": false
+			},
+			{
+				"title": "Company",
+				"url": "company",
+				"submenu": [
+					{
+						"title": "About us",
+						"url": "about"
+					},
+					{
+						"title": "News",
+						"url": "news"
+					},
+					{
+						"title": "FAQ",
+						"url": "faq"
+					},
+					{
+						"title": "Contacts",
+						"url": "contacts"
+					}
+				]
+			},
+			{
+				"title": "About",
+				"url": "about",
+				"submenu": false
+			},
+			{
+				"title": "Referral program",
+				"url": "referral-program",
+				"submenu": false
+			},
+			{
+				"title": "Guarantees",
+				"url": "guarantees",
+				"submenu": false
+			},
+			{
+				"title": "Faq",
+				"url": "faq",
+				"submenu": false
+			},
+			{
+				"title": "News",
+				"url": "news",
+				"submenu": false
+			},
+			{
+				"title": "Contacts",
+				"url": "contacts",
+				"submenu": false
+			},
+			{
+				"title": "Rules",
+				"url": "rules",
+				"submenu": false
+			}
+		],
+		"account": [
+			{
+				"title": "Account",
+				"url": "cabinet01",
+				"submenu": false
+			},
+			{
+				"title": "Invest",
+				"url": "cabinet02",
+				"submenu": false
+			},
+			{
+				"title": "Withdrawal",
+				"url": "cabinet03",
+				"submenu": false
+			},
+			{
+				"title": "Operations",
+				"url": "cabinet04",
+				"submenu": false
+			},
+			{
+				"title": "Partners",
+				"url": "cabinet05",
+				"submenu": false
+			},
+			{
+				"title": "Settings",
+				"url": "cabinet06",
+				"submenu": false
+			},
+			{
+				"title": "Exit",
+				"url": false,
+				"submenu": false
+			}
+		]
+	},
+	"moduleSocials": {
+		"default": [
+			{
+				"icon": "facebook"
+			},
+			{
+				"icon": "instagram"
+			},
+			{
+				"icon": "twitter"
+			},
+			{
+				"icon": "youtube"
+			},
+			{
+				"icon": "vk"
+			},
+			{
+				"icon": "mail"
+			},
+			{
+				"icon": "skype"
+			}
+		]
+	},
+	"pages": {
+		"default": [
+			{
+				"page": "main",
+				"title": "Home",
+				"url": "home",
+				"render": true,
+				"menuRender": true
+			},
+			{
+				"page": "company",
+				"title": "Company",
+				"url": "company",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "get-started",
+				"title": "Get started",
+				"url": "get-started",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "guarantees",
+				"title": "Guarantees",
+				"url": "guarantees",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "about",
+				"title": "About us",
+				"url": "about",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "investments",
+				"title": "Investments",
+				"url": "investments",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "investors",
+				"title": "Investors",
+				"url": "investors",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "bounty",
+				"title": "Bountry",
+				"url": "bounty",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "career",
+				"title": "Career",
+				"url": "career",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "protection",
+				"title": "Protection",
+				"url": "protection",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "news",
+				"title": "News",
+				"url": "news",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "single",
+				"title": "News-single",
+				"url": "single",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "affiliate",
+				"title": "Affiliate",
+				"url": "affiliate",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "representatives",
+				"title": "Representatives",
+				"url": "representatives",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "reviews",
+				"title": "Reviews",
+				"url": "reviews",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "partners",
+				"title": "Partners",
+				"url": "partners",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "partnersheep",
+				"title": "Partnersheep",
+				"url": "partnersheep",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "offers ",
+				"title": "Offers",
+				"url": "offers",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "support",
+				"title": "Support",
+				"url": "support",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "faq",
+				"title": "Faq",
+				"url": "faq",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "contacts",
+				"title": "Contacts",
+				"url": "contacts",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "contact",
+				"title": "Contact",
+				"url": "contact",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "registration",
+				"title": "Registration",
+				"url": "registration",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "terms",
+				"title": "Terms & Conditions",
+				"url": "terms",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "rules",
+				"title": "Rules",
+				"url": "rules",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "privacy",
+				"title": "Privacy Policy",
+				"url": "privacy",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "payouts",
+				"title": "Payouts",
+				"url": "payouts",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "investment-offer",
+				"title": "Investment offer",
+				"url": "investment-offer",
+				"render": false,
+				"menuRender": false
+			},
+			{
+				"page": "business",
+				"title": "Business",
+				"url": "business",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "our-products",
+				"title": "Our products",
+				"url": "our-products",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "404",
+				"title": "404",
+				"url": "404",
+				"render": true,
+				"menuRender": false
+			},
+			{
+				"page": "elements",
+				"title": "Elements",
+				"url": "elements",
+				"render": true,
+				"menuRender": false
+			}
+		]
+	},
+	"side-nav": {
+		"default": null
+	},
+	"static-menu": {
+		"default": null
+	}
+}

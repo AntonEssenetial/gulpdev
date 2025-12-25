@@ -1,0 +1,27 @@
+.module__faq
+  
+  &__li-sub
+    padding-bottom $text-padding
+    
+    p:last-child
+      padding 0px
+      
+    &:last-child
+      padding 0px
+      
+  &__link
+    position: relative 
+    padding-right 20px
+    span 
+      border-left 2px solid $dark
+      border-bottom 2px solid $dark
+      width 8px 
+      height @width 
+      top calc(50% - 4px)
+      position: absolute
+      right 0px
+      trs()
+      transform rotateZ(-45deg)
+      
+  .open &__link span 
+    transform rotateZ(135deg)

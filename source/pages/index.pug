@@ -1,0 +1,11 @@
+include ../modules/head/head
+include ../modules/_page-list/_page-list
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.home)
+
+  body.page
+    +page-list(pages.default)

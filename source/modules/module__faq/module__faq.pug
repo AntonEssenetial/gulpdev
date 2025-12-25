@@ -1,0 +1,49 @@
+mixin module__faq(data)
+  - var bemClass = 'module__faq'
+  <!-- module__faq -->  
+  .module__faq&attributes(attributes)
+    .container 
+      h3 How can I invest with usd.capital ?
+      p Sign up for free, login on account. Make a deposit and get daily profit for 75 days.
+      h3 Which payment systems are you accept?
+      p Bitcoin www.blockchain.com
+      p Perfect Money www.perfectmoney.com
+      h3 How long does it take for my deposit to be added to my account?
+      p Your account will be updated automatically, as we get your deposit.
+      h3 If I forgot my password, what should i do?
+      p Click forgot password button, and make all actions for password recovery. 
+      h3 How can I withdraw funds?
+      p Check you cabin on withdraw area. Send a request for withdrawal and get your money.
+      h3 I made a withdrawal request: when will i get my money on the wallet?
+      p You will get it during 48 hours. Usually much faster.
+      h3 Do you have a affiliate program?
+      p Yes, you can get 7% from all deposits of your referrals.
+      p You can get your invite link on account area.
+      h3 Can I lose money?
+      p Please read the Rules of our platform. There is a risks in trading, but we have a professional team and diversified strategy.  So there is no risks to loose all your money.
+  <!-- end of module__faq -->
+
+
+mixin module__faq-accord(data)
+  - var bemClass = 'module__faq'
+  <!-- module__faq -->  
+  .module__faq&attributes(attributes)
+    .container 
+      ul(class=bemClass + '__ul').jsAccordion
+        li(class=bemClass + '__li')
+          a(href='' class=bemClass + '__link') How can I invest with usd.capital ?
+          ul(class=bemClass + '__sub')
+            li(class=bemClass + '__li-sub')
+              p Sign up for free, login on account. Make a deposit and get daily profit for 75 days.
+        li(class=bemClass + '__li')
+          a(href='' class=bemClass + '__link') Which payment systems are you accept?
+          ul(class=bemClass + '__sub')
+            li(class=bemClass + '__li-sub') Bitcoin www.blockchain.com
+            li(class=bemClass + '__li-sub') 
+              p Perfect Money www.perfectmoney.com
+        li(class=bemClass + '__li')
+          a(href='' class=bemClass + '__link') How can I invest with usd.capital ?
+          ul(class=bemClass + '__sub')
+            li(class=bemClass + '__li-sub')
+              p Sign up for free, login on account. Make a deposit and get daily profit for 75 days.
+  <!-- end of module__faq -->

@@ -1,0 +1,10 @@
+mixin side-nav(data)
+  nav.side-nav&attributes(attributes)
+    ul.menu
+      each item, i in items
+        if i === pageId
+          li.side-nav__item.side-nav__item_active
+            a.side-nav__link(href=item.href)= item.name
+        else
+          li.side-nav__item
+            a.side-nav__link(href=item.href)= item.name

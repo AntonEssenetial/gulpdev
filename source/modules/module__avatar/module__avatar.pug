@@ -1,0 +1,32 @@
+mixin module__avatar__file(data)
+  - var bemClass = 'module__avatar'
+  <!-- module__avatar -->  
+  .module__avatar&attributes(attributes).far.fa-plus
+    input(type='file').module__avatar_file
+    div(class=bemClass + '__wrap')
+      if (data.admin !== undefined)
+        img(class=bemClass + '__img' src=config.path.images + '/avatar/administrator.png' alt='avatar')
+      else if (data.anonym !== undefined)
+        img(class=bemClass + '__img' src=config.path.images + '/avatar/anonym.png' alt='avatar')
+      else if (data.user !== undefined)
+        img(class=bemClass + '__img' src=config.path.images + '/avatar/user.png' alt='avatar')
+      else
+        div(class=bemClass + '__default')
+          span AB
+  <!-- end of module__avatar -->
+
+mixin module__avatar(data)
+  - var bemClass = 'module__avatar'
+  <!-- module__avatar -->  
+  .module__avatar&attributes(attributes)
+    div(class=bemClass + '__wrap')
+      if (data.admin !== undefined)
+        img(class=bemClass + '__img' src=config.path.images + '/avatar/administrator.png' alt='avatar')
+      else if (data.anonym !== undefined)
+        img(class=bemClass + '__img' src=config.path.images + '/avatar/anonym.png' alt='avatar')
+      else if (data.user !== undefined)
+        img(class=bemClass + '__img' src=config.path.images + '/avatar/user.png' alt='avatar')
+      else
+        div(class=bemClass + '__default')
+          span AB
+  <!-- end of module__avatar -->

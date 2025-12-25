@@ -1,0 +1,415 @@
+// Label - input
+$label-tip-font-size  = 12px
+$input-icon-position  = absolute
+$input-size           = 14px
+$input-color          = $cloudy-blue
+$input-background     = white
+$input-border-radius  = 4px
+$input-height         = 40px
+$input-margin         = 0px
+$label-tip-padding   = 0 0 0 0px
+$label-margin         = 0 0 20px 0
+$labelRow-margin      = 10px 0 0 0
+$label-color          = $slate-grey
+$label-size           = 14px
+$formLabelMargin      = 20px
+$input-padding        = 10px
+$input-border-color   = $cloudy-blue
+$input-border-color-focus = $water-blue
+$place-holder-default = $cloudy-blue
+input-border()
+  border 1px solid $input-border-color
+  trs()
+  &:focus 
+    border-color $input-border-color-focus
+    color $charcoal-grey
+    trs()
+    
+
+// Readonly inputs     
+input[type='text']:read-only
+  box-shadow       : none !important
+  background       : $readonlyBg !important
+  color            : $text
+  border           : 1px solid $readonlyBorder
+  &:focus
+    border-color   : $readonlyBorder
+    color          : $text
+
+// Firefox
+input[readonly]
+  box-shadow       : none !important
+  background       : $readonlyBg !important
+  color            : $text
+  border           : 1px solid $readonlyBorder
+  &:focus
+    border-color   : $readonlyBorder
+    color          : $text
+ 
+
+// Checkbox disabled   
+input[type='button']:disabled,
+input[type='checkbox']:disabled,
+select:disabled
+  background-color : $disabledBg
+  color            : $disabledColor
+  border           : 1px solid $disabledBorder
+  cursor           : not-allowed  
+
+
+// Input disabled
+input[type='text']:disabled,
+input[disabled],
+input:disabled,
+input[type='submit']:disabled,
+.select_disabled,
+.btn_disabled,
+button:disabled
+  background-color : $disabledBg !important
+  border-color     : $disabledBorder !important
+  color            : $disabledColor !important
+  cursor           : not-allowed !important
+  .icon 
+    color $blue-grey !important
+.btn_disabled:hover
+  background-color : $disabledBg !important
+  border-color     : $disabledBorder !important
+  color            : $disabledColor !important
+  cursor           : not-allowed !important
+  
+
+// Success Error inputs
+.icon_checkmark 
+.icon_success
+  color $success 
+.icon_error 
+  color $error
+.icon_error
+.icon_success
+.icon_checkmark
+.icon_search 
+  width 15px 
+  height @width
+  
+.input_error
+  input
+  //box-shadow : inset -2px 0px 0px 0px $error !important
+    color          : $error !important
+    border-color   : $error !important
+  .tip 
+    color          : $error
+.input_success 
+  input
+  //box-shadow : inset -2px 0px 0px 0px $success !important
+    color          : $success !important
+    border-color   : $success !important
+  .tip 
+    color          : $success
+.input_checked  
+  // .icon 
+  //   width 20px 
+  //   height @width 
+  //   color $success
+  //   margin-left 20px 
+  //   display: block
+  input
+  //box-shadow : inset -2px 0px 0px 0px $success !important
+    color          : $success !important
+    border-color   : $success !important
+  .tip 
+    color          : $success
+  
+
+// Input reset 
+input[type='text']
+textarea
+select
+  -webkit-appearance: none;
+  border-radius $input-border-radius
+  appearance none
+input
+textarea
+  border-radius $input-border-radius
+  margin 0px 
+  border none
+  if font
+    font-style $placeholderFont
+  else
+    font-family $placeholderFont
+  background: $input-background
+  padding $input-padding
+  color $input-color
+  font-size $input-size
+  input-border()
+select
+  background: $input-background
+  margin 0px 
+  border none
+  if font
+    font-style $placeholderFont
+  else
+    font-family $placeholderFont
+  color $input-color
+  padding $input-padding
+  font-size $input-size
+  input-border()
+
+  
+
+// Default input
+.form__label_row
+  margin $labelRow-margin 
+.form__label
+  color $label-color
+  font-size $label-size
+  margin $label-margin
+  .tip 
+    padding $label-tip-padding
+    font-size $label-tip-font-size
+    a 
+      display inline
+  .tip2 
+    font-size $label-tip-font-size
+    color $bluey-grey
+    display: block
+    margin-right 4px
+  .tip3 
+    font-size $label-tip-font-size
+    color $charcoal-grey
+    display: block
+    font-weight bold
+  .tip-col 
+    padding-left 20px
+    line-height 18px
+.form__label
+.form__area 
+  display block
+  width 100%
+.form__input
+.form__select
+  display block
+  width 100%
+  height $input-height
+  margin $input-margin
+  input-border()
+.form__area
+  margin $input-margin
+.form__link 
+  font-size 12px
+  display: block 
+  line-height 20px 
+  margin 0px !important
+.form__label_margin
+  margin-right $formLabelMargin
+  
+// Form ladel usd
+.form__label_attribute
+  position: relative
+  &:after 
+    content attr(data-attr)
+    display block
+    right 15px 
+    font-size 14px 
+    color $bluish-grey
+    position: absolute
+    text-transform: uppercase
+
+.form__label_inset-row
+  position: relative
+  .icon 
+    display: block
+    right 13px
+    position: $input-icon-position
+    margin-left 20px
+    
+.form__input_pad 
+  padding-right 50px
+    
+// Custom checkbox
+input[type='checkbox']
+input[type='radio']
+  display none
+.label__checkbox.disabled
+.label__radio.disabled
+.label__switch.disabled
+  color $disabledColor !important
+  &:hover  
+    cursor not-allowed !important
+    i 
+      border-color $disabledBorder !important
+      cursor not-allowed
+  i
+    background-color $very-light-blue !important
+    border-color $disabledBorder !important
+    box-shadow 0 0 0 1px $disabledBg !important
+  i::before 
+    display: none !important
+.label__checkbox
+.label__radio
+.label__switch
+  margin 0 0 20px 0 
+  color $text
+  font-size 12px 
+  display flex
+  flex-wrap wrap
+  line-height 20px
+  cursor pointer
+  align-items center
+// Switch 
+.label__switch i 
+  width 40px
+  height 20px
+  background: $medium-green
+  display block
+  position relative
+  cursor pointer
+  border 1px solid $medium-green
+  box-shadow 0px 0 0 1px $medium-green
+  margin-right 10px
+  border-radius(20px)
+  overflow hidden
+  +after()
+    width 18px 
+    height @width
+    background: $white
+    display: block
+    trs()
+    border-radius(50%)
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+// Radio
+.label__radio i 
+  width 17px
+  height @width
+  background: transparent
+  border-radius (50%)
+  display block
+  position relative
+  cursor pointer
+  border 1px solid $input-border-color
+  margin-right 13px
+  trs()
+  +after('')
+    trs()
+    width 5px 
+    height @width
+    background: white
+    display: block
+    margin 5px
+    border-radius (50%)
+    display: none
+// Checkbox
+.label__checkbox i 
+  width 16px 
+  height @width
+  display inline-block
+  position relative
+  border-radius (4px)
+  border 1px solid $input-border-color
+  cursor pointer
+  margin-right 10px
+  trs()
+  overflow: hidden
+  +after('')
+    position: relative
+    left 5px
+    top 2px
+    opacity 0
+    margin-top -20px
+    display block
+    border-bottom 1px solid $input-border-color-focus
+    border-right 1px solid $input-border-color-focus
+    width 3px 
+    height 7px
+    trs()
+.label__checkbox  
+.label__radio
+  &:hover i 
+    border-color $medium-green
+    trs()
+// Custom checkbox
+.label__checkbox .input__checkbox:checked + i
+  border-color $medium-green
+  background: $medium-green
+  +after()
+    opacity 1
+    trs()
+    transform rotateZ(40deg)
+    margin-top 0px
+    border-color white
+// Custom radio   
+.label__radio .input__radio:checked + i
+  background: $medium-green
+  border-color $medium-green
+  +after()
+    display: block
+    trs()
+  +before()
+    display: block
+// Custom switch
+.label__switch .input__switch:checked + i
+  +after()
+    opacity 1
+    trs()
+    margin-top 0px
+    margin-left 20px  
+
+// Paysys
+.form__label_pay 
+  position: absolute
+  right 10px
+  .icon 
+    width 20px 
+    height @width
+    position: relative
+    right 0px
+    margin-left 5px
+    opacity: 0.6
+    trs()
+    cursor pointer
+    
+  .icon:hover 
+  .active 
+    opacity: 1
+
+.icon_eye
+  color $cloudy-blue
+  width 20px 
+  height @width
+  cursor pointer
+  trs()
+  &:hover 
+    color $water-blue
+
+.form__label_tab 
+  width 164px 
+  .row 
+    height 40px
+    border 1px solid $input-border-color
+    border-radius(4px)
+    overflow hidden
+.fl_tab 
+  font-size 14px 
+  text-align: center
+  padding 0 10px
+  height 100%
+  width 50%
+  display flex
+  cursor pointer
+  trs()
+  span 
+    color $charcoal-grey
+    margin auto
+    trs()
+    
+.fl_tab.active 
+.fl_tab:hover
+  background: $water-blue
+  span
+    color $white 
+    
+
+// Placeholder color
+::-webkit-input-placeholder {color:$place-holder-default;}
+::-moz-placeholder          {color:$place-holder-default;}/* Firefox 19+ */
+:-moz-placeholder           {color:$place-holder-default;}/* Firefox 18- */
+:-ms-input-placeholder      {color:$place-holder-default;}

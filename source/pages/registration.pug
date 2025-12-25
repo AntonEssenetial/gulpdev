@@ -1,0 +1,27 @@
+include ../modules/injected/injected
+include ../modules/page/page
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+include ../modules/page__registration/page__registration
+
+
+
+- var pageId = 0;
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.home)
+
+  +page()
+    +inject('header')
+      +header()
+
+    +inject('page__registration')
+      +page__registration()
+
+    +inject('footer')
+      +footer()

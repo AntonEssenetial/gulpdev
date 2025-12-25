@@ -1,0 +1,81 @@
+.iziToast.iziToast-color-blue 
+  background: $information
+  .iziToast-icon
+    background: url('../images/svg/information-icon.svg') no-repeat center
+    background-size contain
+    width 16px 
+    height @width
+
+.iziToast.iziToast-color-orange
+  background: $warning
+  .iziToast-icon
+    background: url('../images/svg/warning-icon.svg') no-repeat center
+    background-size contain
+    width 16px 
+    height @width
+  
+.iziToast.iziToast-color-green
+  background: $success
+  .iziToast-icon
+    background: url('../images/svg/success-icon.svg') no-repeat center
+    background-size contain
+    width 16px 
+    height @width 
+  
+.iziToast.iziToast-color-red
+  background: $error
+  .iziToast-icon
+    background: url('../images/svg/error-icon.svg') no-repeat center
+    background-size contain
+    width 16px 
+    height @width 
+
+.iziToast
+  width 360px
+  padding 20px 0
+
+  .iziToast-body
+    padding-left 35px !important
+    margin 0 0 0 20px !important
+  
+  
+.iziToast>.iziToast-body .iziToast-title
+  color white
+  font-family $regular
+
+.iziToast>.iziToast-body .iziToast-message
+  font-family $regular
+  line-height 16px
+  color white
+  display: block
+  margin 0px
+  
+.iziToast>.iziToast-body .iziToast-title
+  display: block
+  margin 0 0 10px 0
+  float none
+  
+.iziToast>.iziToast-body .iziToast-texts
+  margin 0px
+  
+  
+.iziToast 
+  border-radius(0px)
+  
+.iziToast>.iziToast-body .iziToast-icon
+  top 12px
+  
+  
+.iziToast > .iziToast-close
+  top: 20px
+  right 15px
+  width 12px 
+  height @width 
+  background: url('../images/svg/cross2.svg') no-repeat center
+  background-size contain
+  
+.iziToast:after
+  display: none
+  
+.iziToast>.iziToast-progressbar
+  display: none

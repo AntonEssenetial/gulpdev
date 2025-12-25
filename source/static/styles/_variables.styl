@@ -1,0 +1,396 @@
+// Import plugins
+fontawesome(true)
+sprites(false)
+animate-css(true)
+bxslider(false)
+slick(false)
+customScrollbar(false)
+simpleLightBox(false)
+select(true)
+izi-toast(true)
+
+
+// Css custom components
+paybuttons(false)
+bannerLink(false)
+FAQcontainer(false)
+customScrolCss(false)
+breadCrumbs(false)
+responsiveMenu(false)
+responsiveIframe(true)
+
+
+$IMG-PATH = '../images/background/'
+// Now you can use the function image-url
+// .element
+//   background-image image-url('logo.png')
+
+
+// And the font-url
+$FONT-PATH = '../fonts/'
+  font-face('opensans-bold-webfont', 'opensans-bold-webfont', 'normal', 'normal')
+  font-face('opensans-regular-webfont', 'opensans-regular-webfont', 'normal', 'normal')
+  font-face('opensans-light-webfont', 'opensans-light-webfont', 'normal', 'normal')
+  font-face('opensans-semibold-webfont', 'opensans-semibold-webfont', 'normal', 'normal')
+  font-face('opensans-italic-webfont', 'opensans-italic-webfont', 'normal', 'normal')
+
+
+google-fonts(font = true)
+if font
+  $bold = 700
+  $regular = 400
+  $light = 300
+  $semiBold = 200
+  $italic = 100
+else
+  $bold = 'opensans-bold-webfont'
+  $regular = 'opensans-regular-webfont'
+  $light = 'opensans-light-webfont'
+  $semiBold = 'opensans-semibold-webfont'
+  $italic = 'opensans-italic-webfont'
+  
+
+// Bdoy font 
+$body-font       = "Poppins", sans-serif;
+$body-min-width  = 1240px 
+$body-max-width  = 1240px
+$placeholderFont = $light
+$heading-font    = $regular
+
+
+// Container-width 
+$container-width   = 1240px
+$container-padding = 0 20px
+
+
+// Link - var
+$link-size                  = 13px
+$link-color                 = $dark
+$link-hover-color           = $hover
+$link-text-docoration       = none
+$link-text-docoration-hover = none
+
+
+// Text - var
+$text-size        = 14px
+$text-color       = $text
+$text-padding     = 15px
+$text-line-height = 22px
+
+
+// Span - var
+$span-size  = 14px
+$span-color = $text
+
+
+// Heading - var
+$h1      = 36px
+$h2      = 30px
+$h3      = 24px
+$h4      = 18px
+$h5      = 16px
+$h6      = 15px
+$h-color = $charcoal-grey
+
+
+// Col
+$col-margin = 30px
+
+
+// Banner color link 
+$banner-link-color = $dark
+
+
+// Box sizing
+*
+  box-sizing border-box
+
+
+// Wrapper
+.container 
+  width $container-width
+  margin 0 auto
+  padding $container-padding
+  position relative
+
+
+// Color class
+.white
+  color white
+.blue 
+  color $blue
+.red 
+  color $red
+.green 
+  color $green
+.yellow 
+  color $yellow
+.pink 
+  color $pink 
+.bg-color 
+  color $bg-color
+.link 
+  color $link
+
+
+// Js class
+.jsHidden 
+  display none
+.jsVisible     
+  display block
+.jsContFlex 
+  display none !important
+.jsTab
+  cursor pointer
+.jsCont
+  display none
+.jsCont.jsActive 
+  display block
+.jsNone
+  display none
+  
+
+// Functions
+trs()
+  transition ease-in-out .2s
+trs-slow()
+  transition ease-in-out .4s
+hover()
+  trs()
+  &:hover
+    color $hover
+    text-decoration: none
+static()
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+img()
+  display block
+img-width()
+  max-width 100%
+  width 100%
+  height auto
+
+
+// col 
+.col__50 
+  width 50%
+.col_margin
+  margin-right $col-margin
+.col_margin-20
+  margin-right 20px
+.col_margin-30
+  margin-right 30px
+
+
+// Alignment
+.ta-center
+  text-align: center
+.ta-left
+  text-align: left
+.ta-right
+  text-align: right
+
+
+// H heading 
+h1 
+  font-size $h1
+  color $h-color
+h2 
+  font-size $h2
+  color $h-color
+h3 
+  font-size $h3
+  color $h-color
+h4 
+  font-size $h4
+  color $h-color
+h5 
+  font-size $h5
+  color $h-color
+h6 
+  font-size $h6
+  color $h-color
+  
+h1 h2 h3 h4 h5 h6 
+  font-weight normal
+  if font
+    font-style $heading-font
+  else
+    font-family $heading-font
+    
+
+// Inline elements formating
+menu 
+  padding 0px
+  margin 0px
+span 
+  display inline-block
+  font-size $span-size
+  color $span-color
+a 
+  text-decoration $link-text-docoration
+  display inline-block
+  font-size $link-size
+  color $link-color
+  &:hover 
+    color $link-hover-color
+    text-decoration $link-text-docoration-hover 
+p
+li
+  font-size $text-size
+  color $text-color  
+  line-height $text-line-height
+p
+  padding-bottom $text-padding
+
+    
+// Banner-link
+bannerLink(bannerLink = false)
+  if bannerLink
+    .banner__link 
+      color $banner-link-color
+      font-size 14px
+      display: block
+    
+
+// Charts 
+a[href='http://www.amcharts.com/javascript-charts/']
+  display none !important
+  
+
+// Table reset 
+th 
+  font-weight normal
+
+
+// Custom scrollbar
+customScrolCss(customScrolCss = false)
+  if customScrolCss
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+    .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+      background: $soft-aqua
+    .mCSB_scrollTools .mCSB_draggerRail
+      background-color: border;
+    .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar
+    .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar
+      background-color: #fff; 
+      background-color: hover;
+  
+
+// FAQ container
+FAQcontainer(FAQcontainer = false)
+  if FAQcontainer 
+    .section__content
+      p 
+        font-size 15px 
+        span 
+          color red
+          font-size 12px 
+          position relative
+          top -5px
+      p  a 
+        color gold
+        font-size 15px
+      p  a 
+        margin-right 3px
+      ol li
+        position: relative;
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 18px !important;
+        > ul
+          padding-left: 50px;
+        > ol 
+          margin-top 25px
+          padding-left 15px
+        > li 
+          padding-left 10px
+      ul
+        padding-left 20px
+        margin-bottom: 20px;
+        list-style-type: disc;
+        li 
+          line-height: 25px;
+          font-size: 15px;
+          padding-left: 18px !important;
+          ul
+            padding-left 17px
+            margin 0px
+            list-style circle
+      ol 
+        padding-left 18px
+        padding-bottom 15px
+        p  
+          margin 0 0 15px 0 
+          padding 0 0 10px 0
+          span 
+            color red
+            font-size 9px
+            position relative 
+            top -5px
+      .num__items_roman
+        list-style-type: lower-roman !important;
+        margin-bottom 20px
+      h1
+        font-size 32px 
+      h2
+        font-size 24px
+      h3
+        font-size 20px
+      h4
+        font-size 18px
+      h5
+        font-size 16px
+      h6
+        font-size 14px
+      h1, h2, h3, h4, h5, h6
+        color dark
+        margin 0 0 16px 0
+        padding 0px
+      .t-title 
+        font-size: 24px;
+        margin-bottom: 20px;
+        color dark
+ 
+
+ // Bread
+breadCrumbs(breadCrumbs = false)
+  if breadCrumbs
+    .bread-crumbs
+      
+      &__item
+        font-size 15px
+        display: inline-block
+        
+        a 
+          color dark
+          font-size 15px
+          
+        &:last-child
+          color grey2
+          
+      &__separator 
+        display: inline-block
+        margin 0 5px
+        color grey2 
+        
+
+// Responsive iframe
+responsiveIframe(responsiveIframe = false)
+  if responsiveIframe
+    .iframe-wrapper
+      position relative
+      padding-bottom 56.25% /* 16:9 */
+      padding-top 25px
+      height 0
+    .iframe-wrapper iframe
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%    

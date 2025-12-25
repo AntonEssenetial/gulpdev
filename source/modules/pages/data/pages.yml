@@ -1,0 +1,173 @@
+---
+  pages:
+    default:
+      -
+        page: 'main'
+        title: 'Home'
+        url: 'home'
+        render: true
+        menuRender: true
+      -
+        page: 'company'
+        title: 'Company'
+        url: 'company'
+        render: true
+        menuRender: false
+      -
+        page: 'get-started'
+        title: 'Get started'
+        url: 'get-started'
+        render: false
+        menuRender: false
+      -
+        page: 'guarantees'
+        title: 'Guarantees'
+        url: 'guarantees'
+        render: false
+        menuRender: false
+      -
+        page: 'about'
+        title: 'About us'
+        url: 'about'
+        render: true
+        menuRender: false
+      - 
+        page: 'bounty'
+        title: 'Bountry'
+        url: 'bounty'
+        render: false
+        menuRender: false
+      - 
+        page: 'career'
+        title: 'Career'
+        url: 'career'
+        render: true
+        menuRender: false
+      -
+        page: 'protection'
+        title: 'Protection'
+        url: 'protection'
+        render: false
+        menuRender: false
+      -
+        page: 'news'
+        title: 'News'
+        url: 'news'
+        render: true
+        menuRender: false
+      -
+        page: 'single'
+        title: 'News-single'
+        url: 'single'
+        render: true
+        menuRender: false
+      -
+        page: 'affiliate'
+        title: 'Affiliate'
+        url: 'affiliate'
+        render: false
+        menuRender: false
+      -
+        page: 'representatives'
+        title: 'Representatives'
+        url: 'representatives'
+        render: false
+        menuRender: false
+      -
+        page: 'reviews'
+        title: 'Reviews'
+        url: 'reviews'
+        render: false
+        menuRender: false
+      -
+        page: 'partners'
+        title: 'Partners'
+        url: 'partners'
+        render: false
+        menuRender: false
+      -
+        page: 'partnersheep'
+        title: 'Partnersheep'
+        url: 'partnersheep'
+        render: false
+        menuRender: false
+      - 
+        page: 'offers '
+        title: 'Offers'
+        url: 'offers'
+        render: false
+        menuRender: false
+      -
+        page: 'support'
+        title: 'Support'
+        url: 'support'
+        render: false
+        menuRender: false
+      -
+        page: 'faq'
+        title: 'Faq'
+        url: 'faq'
+        render: false
+        menuRender: false
+      -
+        page: 'contacts'
+        title: 'Contacts'
+        url: 'contacts'
+        render: true
+        menuRender: false
+      -
+        page: 'contact'
+        title: 'Contact'
+        url: 'contact'
+        render: false
+        menuRender: false
+      -
+        page: 'registration'
+        title: 'Registration'
+        url: 'registration'
+        render: false
+        menuRender: false
+      -
+        page: 'terms'
+        title: 'Terms & Conditions'
+        url: 'terms'
+        render: true
+        menuRender: false
+      -
+        page: 'rules'
+        title: 'Rules'
+        url: 'rules'
+        render: true
+        menuRender: false
+      -
+        page: 'privacy'
+        title: 'Privacy Policy'
+        url: 'privacy'
+        render: false
+        menuRender: false
+
+      -
+        page: 'business'
+        title: 'Business'
+        url: 'business'
+        render: true
+        menuRender: false
+      -
+        page: 'our-products'
+        title: 'Our products'
+        url: 'our-products'
+        render: true
+        menuRender: false
+      -
+        page: '404'
+        title: '404'
+        url: '404'
+        render: true
+        menuRender: false
+      -
+        page: 'elements'
+        title: 'Elements'
+        url: 'elements'
+        render: true
+        menuRender: false
+      

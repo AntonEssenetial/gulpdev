@@ -1,0 +1,23 @@
+include ../modules/injected/injected
+include ../modules/page/page
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/page__404/page__404
+include ../modules/footer/footer
+
+//- var pageId = 0;
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.error)
+
+  +page().page_error
+
+    +inject('page__404')
+      +page__404({
+        num: '404',
+        title: 'The page you are looking for is not found'
+      })

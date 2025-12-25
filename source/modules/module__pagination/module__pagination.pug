@@ -1,0 +1,50 @@
+mixin module__pagination(data)
+  - var bemClass = 'module__pagination-1'
+  .module__pagination-1&attributes(attributes)
+    .pagination
+      ul
+        li.previous_page.disabled
+          a(href="") Previous
+        li
+          a(href="") 1
+        li.active
+          a(href="") 2
+        li
+          a(href="") 3
+        li
+          a(href="") 4
+        li
+          a(href="") 5
+        li
+          a(href="") ...
+        li
+          a(href="") 50
+        li.next_page
+          a(href="") Next
+    //- .row.center-c
+    //-   a(href="").btn.btn_mob Показать остальные
+
+
+mixin module__pagination-2(data)
+  - var bemClass = 'module__pagination-2'
+  .module__pagination-2&attributes(attributes)
+    .pagination
+      ul
+        li()
+          a(href="") 1
+        li()
+          a(href="") 2
+        li().active
+          a(href="") 3
+        li()
+          a(href="") 4
+        li()
+          a(href="") 5
+        li()
+          a(href="") ...
+        li()
+          a(href="") 21
+        li().disabled
+          a(href="") Previous page
+        li()
+          a(href="") Next page

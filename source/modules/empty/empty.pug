@@ -1,0 +1,11 @@
+mixin empty(data)
+  - var bemClass = 'empty'
+  <!-- empty -->  
+    .empty-block&attributes(attributes)
+      .empty-wrap
+        +icon('attention')
+        span= data.title1
+        span= data.title2
+        if (data.btn !== undefined)
+          a(href="").btn= data.btn
+  <!-- end of empty -->

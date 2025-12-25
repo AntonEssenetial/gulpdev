@@ -1,0 +1,25 @@
+include ../modules/injected/injected
+include ../modules/page/page
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+include ../modules/page__elements/page__elements
+
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.home)
+
+  +page()
+
+    +inject('page__elements')
+      +page__elements()
+
+    +inject('footer')
+      +footer()
+
+    +inject('module__notification')
+      +module__notification()

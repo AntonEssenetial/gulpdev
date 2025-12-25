@@ -1,0 +1,39 @@
+.module__dash-pay
+  
+  span 
+    font-size 15px 
+    
+  &__item 
+    margin 0 5px 10px 5px
+    border 1px solid $border
+    border-radius(8px)
+    cursor pointer
+    padding 10px
+    display flex
+    trs()
+    
+    &:hover 
+      border-color #39aef3
+      box-shadow 0 0px 0px 1px #39aef3
+      
+  &__item.active 
+    border-color #39aef3
+    box-shadow 0 0px 0px 1px #39aef3, 0 6px 10px #39aef373
+    
+  .icon 
+    width 30px 
+    height @width
+    margin auto
+    
+  .st1
+    display: block
+    color $dark
+    position: relative
+    font-size 14px
+    margin-left 10px
+    text-transform: uppercase
+    
+  .st2 
+    margin-left 10px
+    
+

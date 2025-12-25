@@ -1,0 +1,192 @@
+---
+  head:
+    default:
+      title: Default title
+      mobile: true
+      meta:
+        author: unknown
+        description: Put value here
+        keywords: Put value here
+      og:
+        url: https://
+        description: Description
+        image:
+          path: assets/images/content/preview.png
+          type: image/png
+          width: 500
+          height: 300
+
+    index:
+      title: Список
+      mobile: true
+      meta: default
+      og: default
+
+    home:
+      title: Home
+      mobile: true
+      meta: default
+      og: default
+
+    investments:
+      title: Investments
+      mobile: true
+      meta: default
+      og: default
+
+    investing:
+      title: Investing
+      mobile: true
+      meta: default
+      og: default
+
+    about:
+      title: About
+      mobile: true
+      meta: default
+      og: default
+
+    affiliate:
+      title: Affiliate
+      mobile: true
+      meta: default
+      og: default
+
+    getstarted:
+      title: Get started
+      mobile: true
+      meta: default
+      og: default
+
+    security:
+      title: Security
+      mobile: true
+      meta: default
+      og: default
+
+    partnership:
+      title: Partnership
+      mobile: true
+      meta: default
+      og: default
+
+    faq:
+      title: Faq
+      mobile: true
+      meta: default
+      og: default
+
+    support:
+      title: Support
+      mobile: true
+      meta: default
+      og: default
+
+    registration:
+      title: Registration
+      mobile: true
+      meta: default
+      og: default
+
+    cabinet:
+      title: Cabinet
+      mobile: true
+      meta: default
+      og: default
+
+    terms:
+      title: Terms
+      mobile: true
+      meta: default
+      og: default
+
+    payouts:
+      title: Payouts
+      mobile: true
+      meta: default
+      og: default
+
+    error:
+      title: Header location error
+      mobile: true
+      meta: default
+      og: default
+
+    news:
+      title: News
+      mobile: true
+      meta: default
+      og: default
+
+    reviews:
+      title: Reviews
+      mobile: true
+      meta: default
+      og: default
+
+    investmentsoffer:
+      title: Investments offer
+      mobile: true
+      meta: default
+      og: default
+
+    guarantees:
+      title: Guarantees
+      mobile: true
+      meta: default
+      og: default
+
+    protection:
+      title: Protection
+      mobile: true
+      meta: default
+      og: default
+
+    beginners:
+      title: Beginners
+      mobile: true
+      meta: default
+      og: default
+
+    cryptocurrencies:
+      title: Cryptocurrencies
+      mobile: true
+      meta: default
+      og: default
+
+    howto:
+      title: How to start
+      mobile: true
+      meta: default
+      og: default
+
+    exchangers:
+      title: Exchangers
+      mobile: true
+      meta: default
+      og: default
+
+    investors:
+      title: Investors
+      mobile: true
+      meta: default
+      og: default
+
+    help:
+      title: Help center
+      mobile: true
+      meta: default
+      og: default
+
+    contacts:
+      title: Contacts
+      mobile: true
+      meta: default
+      og: default
+
+    contact:
+      title: Contact
+      mobile: true
+      meta: default
+      og: default
+

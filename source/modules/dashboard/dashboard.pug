@@ -1,0 +1,53 @@
+include ../injected/injected
+include ../head/head
+include ../scripts/scripts
+include ../../helpers/variables
+include ../icon/icon
+include ../module__sidebar/module__sidebar
+//-include ../module__account-popup/module__account-popup
+
+
+mixin dashboard(data) 
+    body.page&attributes(attributes)
+      
+      +injected: block
+
+      .page__wrapper.page__wrapper_account
+
+        //- Header
+        <!-- Header -->
+        +if('header')
+          +use('header')
+        
+        <!-- Main -->
+        main.main     
+            
+          .container
+            
+            //- Account
+            .dashboard.row.between
+
+              //- Account sidebar
+              +module__sidebar()
+              
+              //- Account dash
+              .module__account-dash
+  
+                -for(var x = 0; x < 12; x++)
+                  +if('page__account-0' + x)
+                    +use('page__account-0' + x)
+
+                +if('page__account-10')
+                  +use('page__account-10')
+
+        //- Footer
+        <!-- Footer -->
+        +if('footer')
+          +use('footer')
+  
+        //- Notification
+        +if('module__notification')
+          +use('module__notification')
+
+      <!-- Scripts -->
+      +scripts()

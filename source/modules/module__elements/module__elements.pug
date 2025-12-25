@@ -1,0 +1,273 @@
+include ../module__dash-feed/module__dash-feed
+include ../module__currency/module__currency
+include ../module__dash-pay/module__dash-pay
+include ../module__lang/module__lang
+include ../empty/empty
+include ../module__socials/module__socials
+include ../label/label
+include ../select/select
+include ../module__pagination/module__pagination
+include ../module__notification/module__notification
+include ../module__news/module__news
+include ../module__faq/module__faq
+include ../module__avatar/module__avatar
+include ../module__short-news/module__short-news
+
+mixin module__elements(data)
+  - var bemClass = 'module__elements'
+  <!-- module__elements -->  
+  section.module__elements&attributes(attributes)
+    .container
+      h3 Avatar 
+      .row.center
+        +module__avatar__file({}).module__avatar_input
+        +module__avatar__file({user:true}).module__avatar_input
+        +module__avatar__file({admin:true}).module__avatar_input
+        +module__avatar__file({anonym:true}).module__avatar_input
+      .row
+        +module__avatar({})
+        +module__avatar({user:true}).module__avatar_lg
+        +module__avatar({admin:true}).module__avatar_md
+        +module__avatar({anonym: true}).module__avatar_xs
+      h3 Lang
+      +module__lang()
+      h3 Socials 
+      +module__socials(moduleSocials.default)
+      h3 Socials bg icons
+      +module__socials-bg(moduleSocials.default)
+      h3 Module dash pay 
+      +module__dash-pay()
+      +module__dash-pay-2()
+      +module__dash-pay-3()
+      h3 Module change currency
+      +module__currency()
+      h3 Module change currency 2
+      +module__currency-2()
+      h3 Module dash feed 
+      +module__dash-feed()
+      h3 Empty table 
+      +empty({
+        title1: 'Информация  недоступна.',
+        title2: 'Нет.',
+        btn: 'Обновить'
+      })
+
+      h3 Buttons 
+      .row.center
+        each size in ["xs", "default", "md", "lg"]
+          a(href="" class='btn btn_' + size)= size
+
+      h3 Buttons loading
+      .row.center 
+        button.btn
+          span.name Lodaing
+          span.progress
+        button.btn.btn_tr
+          span.name Loading 
+          span.progress
+
+
+      h3 Buttons with icon
+      .row.center 
+        a(href="").btn.btn_icon
+          | With icon
+          +icon('arrowright')
+        a(href="").btn.btn_tr.btn_disabled.btn_icon
+          | Disabled
+          +icon('arrowright')
+        button(disabled).btn.btn_tr.btn_icon
+          | Disabled
+          +icon('arrowright')
+      
+      h3 Transparent button
+      .row.center 
+        each color in ["red", "green", "blue", "orange", "yellow"]
+          a(href="" class='btn btn_tr btn_tr_' + color)= color
+      
+      h3 Colors 
+      .row.center 
+        each color in ["red", "green", "blue", "orange", "yellow"]
+          a(href="" class='btn btn_' + color)= color
+      
+      h3 Gradient Colors 
+      .row.center.wrap 
+        each color in ["red", "green", "blue", "orange", "yellow"]
+          a(href="" class='btn btn_gr btn_gr_' + color)= color
+      
+      h3 Disabled Buttons
+      .row.center 
+        a(href="").btn.btn_disabled Button disabled
+        button(disabled).btn Button disabled
+      h3 Pagination 
+      +module__pagination()
+      +module__pagination-2()
+      h3 Inputs 
+      div(class=bemClass + '__col').row
+        .col__50.col_margin
+          +label-tab()
+          
+          label().form__label
+            +label({
+              name: 'Default'
+            })(placeholder='default' )
+          label().form__label
+            +label({
+              name: 'With data attribute',
+              dataAttribute: 'USD'
+            })(placeholder='Data attr')
+          label().form__label
+            +label({
+              name: 'Ttitle',
+              columnTip: true,
+              tip2: 'Mark1',
+              tip3: 'item1'
+            })(placeholder='' )
+          label().form__label
+            +label({
+              name: 'Title',
+              rowTip: true,
+              tip2: 'Mark1',
+              tip3: 'item1',
+              tip4: 'Mark2',
+              tip5: 'item3'
+            })(placeholder='' )
+          label().form__label
+            +label({
+              name: 'Readonly input'
+            })(placeholder='Readonly', readonly)
+          label().form__label
+            +label({
+              name: 'Disabled input'
+            })(placeholder='Disabled', disabled)
+          label().form__label.form__label_search.row
+            +label({
+              name: 'Search input',
+              icon: 'search',
+              tip: 'new tip'
+            })
+          label().label__checkbox
+            input(type='checkbox' placeholder='').input__checkbox
+            i
+            | Checkbox
+          label().label__radio
+            input(type='radio' placeholder='').input__radio
+            i
+            | Radio
+          label().label__switch
+            input(type='checkbox' placeholder='').input__switch
+            i
+            | Radio
+          label().form__label
+            | Default
+            .form__label_row.center
+              +select('default')
+                option(value='Item default # 1') Item default # 1
+                option(value='Item default # 2') Item default # 2
+                option(value='value 2') value 2
+              span.tip Description of the select
+          label().form__label
+            | Crytpo
+            .form__label_row.center
+              +select('crypto')
+                each crypto in ["ALL", "RUR", "YAD", "QIWI", "USD", "PM", "PA", "BTC", "LTC", "XRP"]
+                  option(value=crypto)= crypto
+          label().form__label
+            | Lang
+            .form__label_row.center
+              +select('crypto')
+                each lang in ["RU", "EN"]
+                  option(value=lang)= lang
+
+        .col__50
+
+          label().form__label.form__label_pad
+            +label({
+              name: 'Pay',
+              paySys: true      
+            })(placeholder='', value='Label' )
+          label().form__label.input_success
+            +label({
+              name: 'Success',
+              icon: 'success',
+              tip: 'new tip'
+            })(placeholder='' )
+          label().form__label.input_error
+            +label({
+              name: 'Error',
+              icon: 'error',
+              tip: 'new tip'
+            })(placeholder='' )
+          label().form__label.input_success
+            +label({
+              name: 'Succes',
+              tip: 'succes'
+            })(value='Succes')
+          label().form__label.input_error
+            +label({
+              name: 'Error',
+              tip: 'error'
+            })(value='Error')
+          label().form__label.input_checked
+            +label({
+              name: 'Checked',
+              icon: 'checkmark',
+              tip: 'checkmark endabled'
+            })(value='With checkmark')
+          label().form__label
+            +label({
+              name: 'With tip',
+              tip: 'Place here info and',
+              link: 'Link'
+            })(value='Tip')
+          label().label__checkbox.disabled
+            input(type='checkbox' placeholder='' disabled).input__checkbox
+            i
+            | Checkbox
+          label().label__radio.disabled
+            input(type='radio' placeholder='' disabled).input__radio
+            i
+            | Radio
+          label().label__switch.disabled
+            input(type='checkbox' placeholder='' disabled).input__switch
+            i
+            | Switch
+          label().form__label
+            | Textarea
+            .form__label_row
+              textarea().form__area
+      h3 Content text 
+      .content 
+        h1 Heading 1
+        h2 Heading 2
+        h3 Heading 3
+        h4 Heading 4
+        h5 Heading 5
+        h6 Heading 6
+        p <strong>Strong text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        ul 
+          li 
+            p <strong>Strong List 1</strong>
+          li 
+            p List 2
+          li 
+            p List 3
+            ul 
+              li 
+                p List 4 
+              li 
+                p List 5 
+              li 
+                p List 6 
+        p Lorem Ipsum is simplyh dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    .container 
+      h3 Module news 
+    +module__news()
+    +module__short-news()
+    .container 
+      h3 Module faq
+    +module__faq()
+    .container 
+      h3 Module faq accordion
+    +module__faq-accord()
+  //- +module__notification()
+  <!-- of module__elements -->

@@ -1,0 +1,9 @@
+mixin module__dash-feed(data)
+  - var bemClass = 'module__dash-feed'
+  <!-- module__dash-feed -->  
+  .module__dash-feed&attributes(attributes)
+    div(class=bemClass + '__row').row
+      each item in ["mail", "telegram", "skype"]
+        a(href='' class=bemClass + '__link')
+          +icon(item)
+  <!-- end of module__dash-feed -->

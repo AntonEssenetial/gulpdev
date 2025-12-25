@@ -1,0 +1,116 @@
+//- Registration up Popup
+mixin module__registration(data)
+  - var bemClass = 'module__registration'
+  <!-- module__registration -->  
+  .module__registration&attributes(attributes)
+    div(class=bemClass + '__wrap')
+      span(class=bemClass + '__sp') Sing up
+      div(class=bemClass + '__row').row 
+        label().form__label.form__label_margin
+          +label({
+            name: ''
+          })(placeholder='First name' )
+        label().form__label
+          +label({
+            name: ''
+          })(placeholder='Last name' )
+      div(class=bemClass + '__row').row 
+        label().form__label.form__label_margin
+          +label({
+            name: ''
+          })(placeholder='Username' )
+        label().form__label
+          +label({
+            name: ''
+          })(placeholder='Email' )
+      div(class=bemClass + '__row').row 
+        label().form__label.form__label_margin
+          +label({
+            name: '',
+            type: 'password'
+          })(placeholder='Password' )
+        label().form__label
+          +label({
+            name: '',
+            type: 'password'
+          })(placeholder='Retype password' )
+      div(class=bemClass + '__row').row 
+        label().form__label.form__label_margin
+          +label({
+            name: ''
+          })(placeholder='First name' )
+        label().form__label
+          +label({
+            name: ''
+          })(placeholder='Last name' )
+      div(class=bemClass + '__row').row 
+        label().form__label.form__label_margin
+          +label({
+            name: '',
+            tip: 'PIN-code must be 4-8 digits',
+            link: 'Generate random'
+          })(placeholder='Withdraw pin-code' )
+      div(class=bemClass + '__row').row 
+        label().form__label.form__label_margin
+          +label({
+            name: ''
+          })(placeholder='Telegram' )
+        label().form__label
+          +label({
+            name: ''
+          })(placeholder='Skype' )
+      .row.center 
+        span Your upline: 
+        span.sb Upline username
+        span.close
+          +icon('cross')
+      label().label__checkbox
+        input(type='checkbox' placeholder='').input__checkbox
+        i
+        | I accept <a href=''>Privacy policy</a> and <a href=''>Terms & Conditions</a> computer notebooks – which were once called laptops – offer a number of advantages over a computer desktop.
+      div(class=bemClass + '__cap')
+        img(class=bemClass + '__img' src=config.path.images + '/recaptcha/recaptcha.png' alt='')
+      button.btn Send
+  <!-- end of module__registration -->
+
+
+//- Sign in Popup
+mixin module__signin(data)
+  - var bemClass = 'module__registration'
+  <!-- module__registration -->  
+  .module__registration&attributes(attributes)
+    div(class=bemClass + '__wrap')
+      span(class=bemClass + '__sp') Recovery
+      div(class=bemClass + '__row').row 
+        label().form__label.form__label_margin
+          +label({
+            name: ''
+          })(placeholder='Email' )
+        label().form__label
+          +label({
+            name: '',
+            type: 'password'
+          })(placeholder='Password' )
+      div(class=bemClass + '__cap')
+        img(class=bemClass + '__img' src=config.path.images + '/recaptcha/recaptcha.png' alt='')
+      button.btn Send
+  <!-- end of module__registration -->
+
+
+//- Recovery Popup
+mixin module__recovery(data)
+  - var bemClass = 'module__registration'
+  <!-- module__registration -->  
+  .module__registration&attributes(attributes)
+    div(class=bemClass + '__wrap')
+      span(class=bemClass + '__sp') Recovery
+      div(class=bemClass + '__row')
+        label().form__label
+          +label({
+            name: ''
+          })(placeholder='Email' )
+      p Fill out the form below, indicating your E-mail in the open window. E-mail should be the one that is linked to your personal account. After submitting the form, you will receive instructions on the specified E-mail address, in which you will be asked to confirm the legitimacy of the request, and after that you will receive a new temporary password to log into your account.
+      div(class=bemClass + '__cap')
+        img(class=bemClass + '__img' src=config.path.images + '/recaptcha/recaptcha.png' alt='')
+      button.btn Send
+  <!-- end of module__registration -->

@@ -1,0 +1,75 @@
+.module__lang
+  cursor pointer
+  position: relative
+  width 100px
+  &:hover &__str 
+    opacity: 0.6
+  
+  &__str 
+    trs()
+    color $dark
+    font-size 20px
+    text-transform: uppercase
+    position: relative
+    top 2px
+    
+  &__str-2 
+    color $dark
+    text-transform: uppercase
+    font-size 18px
+    font2()
+    
+  &__link
+    display: flex
+    align-items: center;
+    padding 10px 0px 10px 14px
+    trs()
+    
+    &:hover 
+      background: $blue
+      span 
+        color white
+
+  &__dropdown 
+    background: white
+    position: absolute
+    z-index: 1
+    display: none
+    width 100%
+    overflow hidden
+    border-radius(10px)
+    margin-top 10px
+    box-shadow 0 0 5px rgba(0, 0, 0, .2)
+    
+  .lang 
+    background-size cover
+    width 25px 
+    height @width
+    margin-right 10px
+    static()
+    
+  .icon_down 
+    width 13px 
+    height 15px
+    color $dark
+    display: block
+    position: relative 
+    top 1px
+    margin 0px 0px 0 10px
+    trs()
+      
+  &__item.active 
+    background: $blue
+    span 
+      color white
+    
+  &__dropdown.active
+    display block
+    
+  .active   
+    .icon_down 
+      transform rotateZ(180deg)
+      color $blue
+      
+  &_mob &__current 
+    padding-left: 20px;

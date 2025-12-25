@@ -1,0 +1,18 @@
+---
+  moduleSocials:
+    default:
+      - 
+        icon: 'facebook'
+      -
+        icon: 'instagram'
+      - 
+        icon: 'twitter'
+      - 
+        icon: 'youtube'
+      - 
+        icon: 'vk'
+      - 
+        icon: 'mail'
+      - 
+        icon: 'skype'
+      

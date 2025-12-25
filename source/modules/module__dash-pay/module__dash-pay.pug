@@ -1,0 +1,44 @@
+mixin module__dash-pay(data)
+  - var bemClass = 'module__dash-pay'
+  <!-- module__dash-pay -->  
+  .module__dash-pay&attributes(attributes)
+    div(class=bemClass + '__row').row.center.wrap
+      div(class=bemClass + '__item').active
+        .icon.eth
+      each item in ["doge", "ltc", "xrp", "eos", "bch", "trx", "xlm", "usdt", "bsv", "pausd", "paeur", "parur", "pmusd", "pmeur", "pmrur"]
+        div(class=bemClass + '__item' title=item)
+          .icon(class=item)
+  <!-- end of module__dash-pay -->
+
+
+mixin module__dash-pay-2(data)
+  - var bemClass = 'module__dash-pay'
+  <!-- module__dash-pay -->  
+  .module__dash-pay&attributes(attributes)
+    div(class=bemClass + '__row').row.center
+      div(class=bemClass + '__item').row.center.active
+        .icon.pm 
+        span.st1 Perfect money
+      each item in ["btc", "ltc", "eth", "xrp", "bch", "trx"]
+        div(class=bemClass + '__item').row.center
+          .icon(class=item)
+          span(class='st1')=item
+  <!-- end of module__dash-pay -->
+
+
+mixin module__dash-pay-3(data)
+  - var bemClass = 'module__dash-pay'
+  <!-- module__dash-pay -->  
+  .module__dash-pay&attributes(attributes).dash_m
+    div(class=bemClass + '__row').row.center.wrap 
+      div(class=bemClass + '__item').row.center.active
+        .icon.usd
+        .col
+          span.st1 USD
+          span.st2 1.00000 USD
+      each item in ["btc", "ltc", "eth", "xrp", "bch", "trx"]
+        div(class=bemClass + '__item').row.center
+          .icon(class=item)
+          .col
+            span(class='st1')=item
+            span.st2 1.00000

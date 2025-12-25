@@ -1,0 +1,10 @@
+mixin bread-crumbs(data)
+  .bread-crumbs&attributes(attributes)
+    ul.bread-crumbs__list
+      each item, index in data
+        if (item.type === 'link')
+          li.bread-crumbs__item
+            a(href="#").bread-crumbs__link= item.title
+            .bread-crumbs__separator &gt;
+        else
+          li.bread-crumbs__item= item.title

@@ -1,0 +1,32 @@
+---
+  footerNav:
+    default:
+      -
+        title: Окомпании
+        url: about
+      -
+        title: Правила компании
+        url: rules
+      -
+        title: Политика конфиденциальности
+        url: policy
+      -
+        title: FAQ
+        url: faq
+      -
+        title: Новости
+        url: news
+      -
+        title: Контакты
+        url: contacts
+
+    serv:
+      -
+        title: Иностранцам
+        url: foreight
+      -
+        title: Партнерам
+        url: referral-program
+      -
+        title: Гарантии
+        url: guarantees

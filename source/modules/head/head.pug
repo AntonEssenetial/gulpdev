@@ -1,0 +1,53 @@
+mixin head(data)
+  meta(charset="UTF-8")
+  title= data.title + ' :: ' + config.projectName
+  
+  if data.meta
+    if data.meta == "default"
+      - data.meta = head.default.meta
+
+    meta(content=data.meta.author name="author")
+    meta(content=data.meta.description name="description")
+    meta(content=data.meta.keywords name="keywords")
+
+  if data.mobile
+    meta(content="telephone=no" name="format-detection")
+    meta(name="robots" content="noodp, noydir")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    //- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers
+    meta(name="HandheldFriendly" content="true")
+    meta(content="IE=edge" http-equiv="X-UA-Compatible")
+
+  link(rel="stylesheet", href=config.path.styles + "/style.min.css")
+  
+  //- OpenGraph Meta
+  if data.og
+    if data.og == "default"
+      - data.og = head.default.og
+
+    meta(property="og:title" content=data.title)
+    meta(property="og:url" content=data.og.url)
+    meta(property="og:description" content=data.og.description)
+    meta(property="og:image" content=data.og.image.path)
+    meta(property="og:image:type" content=data.og.image.type)
+    meta(property="og:image:width" content=data.og.image.widht)
+    meta(property="og:image:height" content=data.og.image.height)
+    meta(property="twitter:description" content=data.og.description)
+    link(rel="image_src" href=data.og.image.path)
+  
+  //- Favicon
+  //- Genereted with http://realfavicongenerator.net/
+  link(rel="apple-touch-icon" sizes="180x180" href=config.path.favicons + "/apple-touch-icon.png")
+  link(rel="icon" type="image/png" href=config.path.favicons + "/favicon-32x32.png" sizes="32x32")
+  link(rel="icon" type="image/png" href=config.path.favicons + "/favicon-16x16.png" sizes="16x16")
+  link(rel="mask-icon" href=config.path.favicons + "/safari-pinned-tab.svg" color="#ff3333")
+  link(rel="shortcut icon" href=config.path.favicons + "/favicon.ico")
+  meta(name="msapplication-TileColor" content="#333366")
+  meta(name="msapplication-TileImage" content=config.path.favicons + "/mstile-144x144.png")
+  meta(name="msapplication-config" content=config.path.favicons + "/browserconfig.xml")
+  meta(name="theme-color" content="#333366")
+
+  //- Google fonts
+  if GoogleFonts
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">

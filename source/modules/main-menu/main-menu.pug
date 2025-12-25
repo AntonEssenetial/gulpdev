@@ -1,0 +1,29 @@
+include ../main-menu-submenu/main-menu-submenu
+
+mixin main-menu(data)
+  nav.main-menu&attributes(attributes)
+    ul.row.between
+      each item, i in data
+        if item.menuRender === true
+          if i === pageId
+            li.main-menu__item.active
+              a(href=item.url + '.html').main-menu__link= item.title
+               
+          else
+            li.main-menu__item
+              a(href=item.url + '.html').main-menu__link= item.title
+
+mixin main-menu-sub(data)
+  nav.main-menu&attributes(attributes)
+    ul.row.between
+      each item, i in data
+        if i === pageId
+          li.main-menu__item.active
+            a(href=item.url + '.html').main-menu__link= item.title
+            if (item.submenu !== false)
+              +main-menu-submenu(item.submenu)
+        else
+          li.main-menu__item
+            a(href=item.url + '.html').main-menu__link= item.title
+            if (item.submenu !== false)
+              +main-menu-submenu(item.submenu)

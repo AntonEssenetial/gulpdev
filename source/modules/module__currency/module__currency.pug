@@ -1,0 +1,24 @@
+mixin module__currency(data)
+  - var bemClass = 'module__currency'
+  <!-- module__currency -->  
+  .module__currency&attributes(attributes)
+    div(class=bemClass + '__row').row
+      div(class=bemClass + '__item').active 
+        .icon.btc
+      each item in ["doge", "ltc", "xrp", "eos", "bch", "trx", "xlm", "usdt", "bsv"]
+        div(class=bemClass + '__item')
+          .icon(class=item)
+  <!-- end of module__currency -->
+
+
+mixin module__currency-2(data)
+  - var bemClass = 'module__currency'
+  <!-- module__currency -->  
+  .module__currency&attributes(attributes)
+    div(class=bemClass + '__row').row
+      div(class=bemClass + '__item').active
+        span(class=bemClass + '__st') BTC
+      each item in ["doge", "ltc", "xrp", "eos", "bch", "trx", "xlm", "usdt", "bsv"]
+        div(class=bemClass + '__item')
+          span(class=bemClass + '__st')= item
+  <!-- end of module__currency -->

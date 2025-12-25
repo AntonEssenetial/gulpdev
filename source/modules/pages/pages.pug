@@ -1,0 +1,5 @@
+mixin pages(data)
+  each item in data 
+    if item.render === true
+      +if('page__' + item.page)
+        +use('page__' + item.page)

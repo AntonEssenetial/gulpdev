@@ -1,0 +1,79 @@
+mixin label(data)
+
+  //- Label name
+  if (data.name !== undefined)
+    =data.name 
+
+  //- Label with data attribute
+  if (data.dataAttribute !== undefined)
+
+    .form__label_row.row.center
+      .form__label_inset-row.row.center(data-attr=data.dataAttribute).form__label_attribute
+        input(type=data.type)&attributes(attributes).form__input.form__input_pad 
+  
+      //- Tooltip for label
+      if (data.tip !== undefined)
+        .tip-col
+          span.tip= data.tip 
+            if (data.link !== undefined)
+              a(href="")= data.link
+
+  else 
+    .form__label_row.row.center
+      .form__label_inset-row.row.center
+
+        //- Password input 
+        if (data.pass !== undefined)
+          input(type='password')&attributes(attributes).form__input.form__input_pad.form__input_pass
+          +icon('eye')
+        
+
+        //- Input with custom icon
+        else if (data.icon !== undefined)
+          input(type=data.type)&attributes(attributes).form__input.form__input_pad
+          +icon(data.icon)
+
+
+        //- Input with pay-systems icons
+        else if (data.paySys !== undefined)
+          input(type=data.type)&attributes(attributes).form__input.form__input_pad
+          .form__label_pay.row.center 
+            .icon.pm.active
+            .icon.pa
+        
+        //- Default input
+        else 
+          input(type=data.type)&attributes(attributes).form__input
+
+      //- Tooltip for label
+      if (data.tip !== undefined)
+        .tip-col
+          span.tip= data.tip 
+          if (data.link !== undefined)
+            a(href="")= data.link
+
+      //- Tooltip for label via coulmn
+      if (data.columnTip !== undefined)
+        .tip-col
+          span.tip2= data.tip2
+          span.tip3= data.tip3
+
+      //- Tooltip for label via columns
+      if (data.rowTip !== undefined)
+        .tip-col 
+          .row.center 
+            span.tip2= data.tip2
+            span.tip3= data.tip3
+          .row.center 
+            span.tip2= data.tip4
+            span.tip3= data.tip5
+
+
+mixin label-tab(data)
+  label().form__label.form__label_tab
+    | Check 
+    .form__label_row.row.center
+      .fl_tab.active 
+        span Label 1
+      .fl_tab 
+        span Label 2

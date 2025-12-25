@@ -1,0 +1,23 @@
+// Lang icons //
+langs = ru en de es fr it cn jp pl
+image-lang-url = '../images/svg/lang/'
+for item in langs
+  .{item}
+    background: url(image-lang-url + item + '.svg') no-repeat center
+    background-size contain
+
+// Crypto icons // 
+crypto-icons = rur qiwi all yad btc eth ltc xrp bch dash usdt xmr usd ac pm pa pausd paeur parur pmusd pmeur pmrur xrp doge eos trx xlm bsv
+image-crypto-url = '../images/svg/crypto/'
+for item in crypto-icons 
+  .{item}
+    background: url(image-crypto-url + item + '.svg') no-repeat center
+    background-size contain
+    
+// Social network icons
+social-icons = facebook instagram twitter youtube telegram
+image-social-url = '../images/svg/socials/'
+for item in social-icons
+  .{item}
+    background: url(image-social-url + item + '.svg') no-repeat center
+    background-size contain

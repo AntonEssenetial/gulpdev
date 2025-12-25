@@ -1,0 +1,16 @@
+//- Svg html
+mixin module__socials(data)
+  - var bemClass = 'module__socials'
+  .module__socials&attributes(attributes)
+    .row.center 
+      each item in  data 
+        a(href="").icon
+          +icon(item.icon)
+
+//- Svg bg
+mixin module__socials-bg(data)
+  - var bemClass = 'module__socials'
+  .module__socials&attributes(attributes)
+    .row.center 
+      each item in  data 
+        a(href="" class=item.icon).icon

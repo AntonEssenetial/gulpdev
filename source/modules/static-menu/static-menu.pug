@@ -1,0 +1,8 @@
+mixin static-menu(data)
+  menu.row.static-menu&attributes(attributes)
+    each item, i in data
+      if i === subId2
+        a(href=item.url).static-menu__link.static-menu__link_active= item.title
+      else  
+        a(href=item.url).static-menu__link= item.title
+		

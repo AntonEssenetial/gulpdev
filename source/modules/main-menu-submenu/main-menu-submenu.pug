@@ -1,0 +1,9 @@
+mixin main-menu-submenu(data)
+  ul.sub-menu.animated.fadeIn&attributes(attributes)
+    each item, i in data
+      if i === subId
+        li.sub-menu__item.sub-menu__item_active
+          a(href=item.url).sub-menu__link= item.title
+      else  
+        li.sub-menu__item
+          a(href=item.url).sub-menu__link= item.title

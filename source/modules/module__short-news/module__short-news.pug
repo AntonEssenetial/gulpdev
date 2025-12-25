@@ -1,0 +1,18 @@
+mixin module__short-news(data)
+  - var bemClass = 'module__short-news'
+  <!-- module__short-news -->  
+  .module__short-news&attributes(attributes)
+    .container
+      div(class=bemClass + '__row').row
+        -for (var x = 0; x < 3; x ++)
+          div(class=bemClass + '__item')
+            div(class=bemClass + '__left')
+              a(href='single.html' class=bemClass + '__link-1')
+                img(class=bemClass + '__img' src=config.path.images + '/news/news01.jpg' alt='')
+            div(class=bemClass + '__right')
+              a(href='single.html' class=bemClass + '__link-2') News title
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              span(class=bemClass + '__date') 21.02.2019
+      .row.center-c 
+        a(href="").btn More
+  <!-- end of module__short-news -->

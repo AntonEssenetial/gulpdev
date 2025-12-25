@@ -1,0 +1,71 @@
+pageList:
+  data:
+    -
+      title: Home
+      url: home
+    -
+      title: Security
+      url: security
+    -
+      title: About 
+      url: about
+    -
+      title: Investments
+      url: investments
+    - 
+      title: Partnership
+      url: partnership
+    -
+      title: Faq
+      url: faq
+    -
+      title: Support
+      url: support
+    -
+      title: Contacts
+      url: contacts
+    - 
+      title: Rules 
+      url: rules
+    - 
+      title: Registration 
+      url: registration
+    - 
+      title: Cabinet01
+      url: cabinet01
+    - 
+      title: Cabinet02
+      url: cabinet02
+    - 
+      title: Cabinet03
+      url: cabinet03
+    - 
+      title: Cabinet04
+      url: cabinet04
+    - 
+      title: Cabinet05
+      url: cabinet05
+    - 
+      title: Cabinet06
+      url: cabinet06
+    - 
+      title: Cabinet07
+      url: cabinet07
+    - 
+      title: Cabinet08
+      url: cabinet08
+    - 
+      title: Cabinet09
+      url: cabinet09
+    - 
+      title: Cabinet10
+      url: cabinet10
+    - 
+      title: Cabinet11
+      url: cabinet11
+    - 
+      title: Cabinet12
+      url: cabinet12
+    -
+      title: Elements
+      url: elements

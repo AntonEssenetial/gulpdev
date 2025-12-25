@@ -1,0 +1,13 @@
+include ../side-nav/side-nav
+include ../module__logo/module__logo
+include ../module__lang/module__lang
+include ../main-menu/main-menu
+
+mixin header(data)
+  - var bemClass = 'header'
+  header.header&attributes(attributes)
+    .container
+      .row 
+        +module__lang()
+        +main-menu(pages.default)
+        +module__logo()

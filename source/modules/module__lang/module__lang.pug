@@ -1,0 +1,20 @@
+mixin module__lang(data)
+  - var bemClass = 'module__lang';
+  - var langs = ["en", "es", "it", "fr", "cn", "jp", "pl"];
+  <!-- module__lang -->  
+  .module__lang&attributes(attributes).jsContPar.jsLang
+    div(class=bemClass + '__current').jsBtn.row.between.center
+      .icon.lang.ru
+      span(class=bemClass + '__str') Ru
+      +icon('down')
+    ul(class=bemClass + '__dropdown').animated.fadeInUp.jsContainer
+      li(class=bemClass + '__item').active
+          a(href='' class=bemClass + '__link') 
+            .icon.lang.ru
+            span(class=bemClass + '__str-2') Ru
+      each lang in langs
+        li(class=bemClass + '__item')
+          a(href='' class=bemClass + '__link') 
+            .icon.lang(class=lang)
+            span(class=bemClass + '__str-2')= lang
+  <!-- end of module__lang -->

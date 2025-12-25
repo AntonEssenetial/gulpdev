@@ -1,0 +1,9 @@
+mixin module__error(data)
+  - var bemClass = 'module__error'
+  <!-- module__error -->  
+  section.module__error&attributes(attributes)
+    div(class=bemClass + '__cont')
+      span(class=bemClass + '__str')= data.num
+      span(class=bemClass + '__str-2')= data.title
+      a(href="home.html").btn Back to home page
+  <!-- end of module__error -->  

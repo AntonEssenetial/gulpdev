@@ -1,0 +1,36 @@
+mixin scripts()
+  //- jade scripts.jade
+  if jQuery
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js")
+  //- Angular light library
+  if angular
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
+  
+  //- CHarts
+  if amChart
+    script(src="https://www.amcharts.com/lib/3/amcharts.js")
+    script(src="https://www.amcharts.com/lib/3/serial.js")
+    script(src="https://www.amcharts.com/lib/3/themes/light.js")
+    script(src="assets/js/lib/charts.js")
+  
+  //- Captcha
+  if captcha 
+    script(src='https://www.google.com/recaptcha/api.js')
+  
+  //- Google Analytics
+  if GoogleAnalytics
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  
+  //- Concact plugins
+  if plugins
+    script(src='assets/js/plugins/plugins.min.js')
+  
+  //- All scripts
+  script(src='assets/js/main/main.js')

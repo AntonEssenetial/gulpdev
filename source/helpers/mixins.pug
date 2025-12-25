@@ -1,0 +1,154 @@
+
+//- Secondary navigation (side-navi)
+mixin nav(items)
+  nav.main-menu
+    ul.menu
+      each item, i in items
+        if i === pageId
+          li.menu__item.menu__item_active
+            a.menu__link(href=item.href)= item.name
+        else
+          li.menu__item
+            a.menu__link(href=item.href)= item.name
+
+
+//- Menu 
+mixin content-menu(data)
+  menu.row
+    each item, i in data
+      if i === subId2
+        a(href=item.url).menu__link.menu__link_active= item.title
+      else  
+        a(href=item.url).menu__link= item.title
+
+
+//- Sandwitch
+mixin sandwitch()
+  button.toggle-menu.jsMobileDropdown
+    .sandwitch
+      span.sw-topper
+      span.sw-bottom
+      span.sw-footer
+
+
+//- Bread
+//- mixin bread-crumbs(data)
+//-   .bread-crumbs
+//-     ul
+//-       each ent, num in data
+//-         if (num+1 < data.length)
+//-           li.bread-crumbs__item 
+//-             a(href="o").bread-crumbs__link= ent
+//-             .bread-crumbs__separator / 
+//-         else
+//-           li.bread-crumbs__item= ent
+
+
+//- Heading
+mixin heading(item)
+  if item[0]= item[0]
+    h2.section__content-h2= item[0]
+  if item[1]= item[1]
+    .section__content-text
+      p= item[1]
+      if item[2]= item[2]
+        p= item[2] 
+          if item[3]= item[3]
+            a(href='mailto:')= item[3]
+
+
+//- Acordion
+mixin acordion(items)
+  ul.jsNavgoco.acordion
+    each item in items
+      li.acordion__item 
+        a(href='#').acordion__link= item.title
+        ul.acordion__sub-item
+          h3= item.heading
+          span= item.span1
+          span= item.span2
+          span= item.span3
+          p= item.text
+          p= item.text
+
+
+//- Pagination
+mixin pagination
+  .pagination
+    ul
+      li
+        a(href="") 1
+      li
+        a(href="") 2
+      li.active
+        a(href="") 3
+      li
+        a(href="") 4
+      li
+        a(href="") 5
+      li ...
+      li
+        a(href="") 100
+      li.previous_page.disabled
+        a(href="") Назад
+      li.next_page 
+        a(href="") Далее
+
+
+//- policy
+mixin policy()
+  span.t-title 1. Регистрация Пользователя. Учетная запись Пользователя
+  ol
+    li 
+      p ООО «ЯНДЕКС» (далее — «Яндекс») предлагает пользователю сети Интернет (далее – Пользователь) - использовать свои сервисы на условиях, изложенных в настоящем Пользовательском соглашении (далее — «Соглашение», «ПС»). Соглашение вступает в силу с момента выражения Пользователем согласия с его условиями в порядке, предусмотренном п. 1.4 Соглашения.
+    li 
+      p Яндекс предлагает Пользователям доступ к широкому спектру сервисов, включая средства навигации, коммуникации, поиска, размещения и хранения разного рода информации и материалов (контента), персонализации контента, совершения покупок и т. д. Все существующие на данный момент сервисы, а также любое развитие их и/или добавление новых является предметом настоящего Соглашения.
+    li 
+      p Использование сервисов Яндекса регулируется настоящим Соглашением, Лицензией на использование поисковой системы Яндекса (<a href='#'>https://yandex.ru/legal/termsofuse/</a>), Политикой конфиденциальности (<a href='#'>https://yandex.ru/legal/confidential/</a>), а также условиями использования отдельных сервисов. Соглашение может быть изменено Яндексом без какого-либо специального уведомления, новая редакция Соглашения вступает в силу с момента ее размещения в сети Интернет по указанному в настоящем абзаце адресу, если иное не предусмотрено новой редакцией Соглашения. Действующая редакция ПС всегда находится на странице по адресу <a href='#'>https://yandex.ru/legal/rules/ </a>. 
+    li 
+      p Начиная использовать какой-либо сервис/его отдельные функции, либо пройдя процедуру регистрации, Пользователь считается принявшим условия Соглашения в полном объеме, без всяких оговорок и исключений. В случае несогласия Пользователя с какими-либо из положений Соглашения, Пользователь не вправе использовать сервисы Яндекса. В случае если Яндексом были внесены какие-либо изменения в Соглашение в порядке, предусмотренном пунктом 1.3 Соглашения, с которыми Пользователь не согласен, он обязан прекратить использование сервисов Яндекса.
+      ul
+        li Начиная использовать какой-либо сервис/его отдельные функции
+        li Пользователь считается принявшим условия
+        li Соглашения в полном объеме, без всяких оговорок и исключений.
+        li В случае несогласия Пользователя с какими-либо из положений Соглашения
+        li Пользователь не вправе использовать сервисы Яндекса.
+      ul.num__items_roman
+        li Начиная использовать какой-либо сервис/его отдельные функции
+        li Пользователь считается принявшим условия
+        li Соглашения в полном объеме, без всяких оговорок и исключений.
+        li В случае несогласия Пользователя с какими-либо из положений Соглашения
+        li Пользователь не вправе использовать сервисы Яндекса.
+  span.t-title 2. Стилизация текста
+  h1 h1. Text heading
+  h2 h2. Text heading
+  h3 h3. Text heading
+  h4 h4. Text heading
+  h5 h5. Text heading
+  h6 h6. Text heading
+  p Начиная использовать какой-либо сервис его отдельные функции, либо пройдя процедуру регистрации, Пользователь считается принявшим условия <strong>Соглашения</strong> в полном объеме <span>1</span>, без всяких оговорок и исключений. В случае несогласия Пользователя с какими-либо из положений Соглашения, Пользователь не вправе использовать сервисы Яндекса. 
+  p <span>1</span> В случае если 
+    a(href="") Яндексом 
+    | были внесены какие-либо изменения в Соглашение в порядке, <u>предусмотренном пунктом 1.3</u> Соглашения, с которыми Пользователь не согласен, он <s>обязан</s> прекратить <i>использование сервисов Яндекса</i>.
+  ul
+    li Lorem ipsum dolor sit amet
+    li Consectetur adipiscing elit
+    li Integer molestie lorem at massa
+    li Facilisis in pretium nisl aliquet
+    li Nulla volutpat aliquam velit
+      ul
+        li Phasellus iaculis neque
+        li Purus sodales ultricies
+        li Vestibulum laoreet porttitor sem
+        li Ac tristique libero volutpat at
+    li Faucibus porta lacus fringilla vel
+    li Aenean sit amet erat nunc
+  ol
+    li Lorem ipsum dolor sit amet
+    li Consectetur adipiscing elit
+    li Integer molestie lorem at massa
+    li Facilisis in pretium nisl aliquet
+    li Nulla volutpat aliquam velit
+    li Faucibus porta lacus fringilla vel
+    li Aenean sit amet erat nunc
+    li Eget porttitor lorem

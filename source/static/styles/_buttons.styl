@@ -1,0 +1,263 @@
+ // Buttons
+$button-font-family            = 400
+$button-radius                 = 5px
+$button-height                 = 44px
+$button-min-width              = 155px
+$button-padding                = 0 20px
+$button-size                   = 14px
+$button-text-transform         = none
+$button-color                  = $white
+$button-border                 = $water-blue
+$button-gradient               = linear-gradient(90deg, rgb(255,150,0) 0%, rgb(255,216,0) 50%, rgb(255,150,0) 100%);
+$button-background             = $water-blue
+$button-hover-color            = $white
+$button-border-hover-color     = $button-hover
+$button-background-hover-color = $button-hover
+
+// Button lg
+$button-lg-width               = auto
+$button-lg-height              = $button-height + 20px
+$button-lg-font-size           = 16px
+$button-lg-font-weight         = normal 
+$button-lg-padding             = 0px
+// Button md
+$button-md-width               = auto
+$button-md-height              = $button-height + 10px
+$button-md-font-size           = 14px
+$button-md-font-weight         = normal
+$button-md-padding             = 0px 20px
+// Button xs
+$button-xs-width               = auto
+$button-xs-height              = $button-height - 4px
+$button-xs-font-size           = 14px
+$button-xs-font-weight         = normal
+$button-xs-padding             = 0px 20px
+
+
+// Button loader
+.btn
+  span 
+    color white
+    position: relative
+    z-index 2
+    font-weight 400
+
+   
+
+// Button styles
+button 
+  border none 
+  vertical-align middle
+  cursor pointer 
+  border none
+  outline none
+  background transparent
+  
+.btn
+  if font
+    font-weight $button-font-family
+  else
+    font-family $button-font-family
+  position: relative
+  min-width $button-min-width
+  white-space: nowrap;
+  background-color $button-background
+  border-radius $button-radius
+  height $button-height
+  line-height $button-height 
+  padding $button-padding
+  display inline-block
+  font-size $button-size
+  text-align: center
+  cursor pointer
+  color $button-color
+  border 1px solid $button-border
+  -webkit-appearance: none;
+  text-decoration none
+  text-transform $button-text-transform
+  trs()
+ 
+
+// Button size    
+.btn_lg
+  width $button-lg-width
+  height $button-lg-height
+  line-height $button-lg-height
+  font-size $button-lg-font-size
+  font-weight $button-lg-font-weight
+  padding $button-lg-padding
+.btn_md
+  width $button-md-width
+  height $button-md-height
+  line-height $button-md-height
+  font-size $button-md-font-size
+  font-weight $button-md-font-weight
+  padding $button-md-padding
+.btn_xs
+  width $button-xs-width
+  height $button-xs-height
+  line-height $button-xs-height - 2px
+  font-size $button-xs-font-size
+  font-weight $button-xs-font-weight
+  padding $button-xs-padding
+
+
+// Background - gradient
+.btn_gr
+  background-image $button-gradient
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  &:hover 
+    background-position: 0 0;
+    border-color transparent
+.btn_gr_red
+  background-image linear-gradient(90deg, $red 0%, $red + 50 50%, $red 100%);
+  border-color transparent
+.btn_gr_green
+  background-image linear-gradient(90deg, $green 0%, $green + 50 50%, $green 100%);
+  border-color transparent
+.btn_gr_blue
+  background-image linear-gradient(90deg, $blue 0%, $blue + 50 50%, $blue 100%);
+  border-color transparent 
+.btn_gr_orange
+  background-image linear-gradient(90deg, $orange 0%, $orange + 50 50%, $orange 100%);
+  border-color transparent
+.btn_gr_yellow
+  background-image linear-gradient(90deg, $yellow 0%, $yellow + 50 50%, $yellow 100%);
+  border-color transparent
+
+
+// Background - color
+.btn_tr
+  border 1px solid $water-blue
+  background-color: transparent
+  background-image none
+  color $water-blue
+  span 
+    color $water-blue
+  &:hover span
+    color $white
+    
+$btn_red = $red
+$btn_green = $green
+$btn_blue = $blue
+$btn_yellow = $yellow
+$btn_orange = $orange
+$btn_purple = $purple
+$btn_grey = $grey
+
+$btn_tr_red = $red
+$btn_tr_green = $green
+$btn_tr_blue = $blue
+$btn_tr_yellow = $yellow
+$btn_tr_orange = $orange
+$btn_tr_purple = $purple
+$btn_tr_grey = $grey
+
+
+  
+.loading 
+  position: relative
+  cursor progress
+  .progress
+    height 100% 
+    display: block
+    left 0px 
+    bottom 0px 
+    position: absolute
+    background: #003e98;
+    animation: progress-anim 10s ease 0s;
+    z-index: 1
+    trs()
+    
+.btn:hover  
+  color $button-hover-color
+  border-color $button-border-hover-color
+  background-color $button-hover
+  trs()
+    
+.btn_tr
+  .progress
+    height 3px
+       
+.btn_tr.loading
+  background transparent
+  span 
+    color $blue 
+    
+.name 
+  position: relative
+  width 100% 
+  text-align: center
+  
+.btn 
+  .icon 
+    margin-right 10px
+    trs()
+  
+.btn_tr:disabled
+  border-color $border
+  background-color transparent 
+  background-image none
+  color $border
+  &:hover 
+    background-color transparent
+    color $border
+    
+btns = btn_red btn_green btn_blue btn_yellow btn_orange btn_purple btn_grey
+for item in btns
+  .{item}
+    border-color $+item
+    background-color $+item
+    color white
+    &:hover 
+      border-color $+item - 20 
+      background-color $+item - 20 
+ 
+btns_tr = btn_tr_red btn_tr_green btn_tr_blue btn_tr_yellow btn_tr_orange btn_tr_purple btn_tr_grey
+for item in btns_tr      
+  .{item}
+    border-color $+item
+    background-color transparent
+    color $+item
+    &:hover 
+      border-color $+item - 20 
+      background-color $+item - 20 
+      
+.btn_icon 
+  .icon_arrowright
+  .icon_arrowleft
+    position: relative
+    top 1px
+  .icon_arrowleft
+    margin-right 10px
+  .icon_arrowright
+    margin-left 10px
+    
+    
+@keyframes progress-anim {
+  0% {
+    width: 0%;
+  }
+  5% {
+    width: 0%;
+  }
+  10% {
+    width: 15%;
+  }
+  30% {
+    width: 40%;
+  }
+  50% {
+    width: 55%;
+  }
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+  // 100% {
+  //   width: 0%;
+  // }
+}

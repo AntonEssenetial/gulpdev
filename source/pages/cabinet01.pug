@@ -1,0 +1,26 @@
+include ../modules/injected/injected
+include ../modules/dashboard/dashboard
+
+include ../modules/head/head
+include ../modules/header/header
+include ../modules/footer/footer
+include ../modules/page__account-01/page__account-01
+
+
+- var subId = 0;
+
+doctype html
+html(lang=config.lang)
+
+  head
+    +head(head.home)
+
+  +dashboard()
+    +inject('header')
+      +header()
+
+    +inject('page__account-01')
+      +page__account-01()
+
+    +inject('footer')
+      +footer()

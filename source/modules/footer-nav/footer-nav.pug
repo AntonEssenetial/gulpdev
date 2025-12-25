@@ -1,0 +1,21 @@
+include ../footer-nav-sub/footer-nav-sub
+
+mixin footer-nav(data)
+  ul.footer-nav&attributes(attributes)
+    each item, i in data
+      if i === subId
+        li.footer-nav__item.active
+          a(href=item.url + '.html').footer-nav__link= item.title
+      else
+        li.footer-nav__item
+          a(href=item.url + '.html').footer-nav__link= item.title
+
+mixin footer-nav2(data)
+  ul.footer-nav&attributes(attributes)
+    each item, i in data
+      if i === sub2Id
+        li.footer-nav__item.active
+          a(href=item.url + '.html').footer-nav__link= item.title
+      else
+        li.footer-nav__item
+          a(href=item.url + '.html').footer-nav__link= item.title

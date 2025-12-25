@@ -1,0 +1,81 @@
+---
+  mainMenu:
+    default:
+      -
+        title: Home
+        url: home
+        submenu: false
+      -
+        title: Company
+        url: company
+        submenu: 
+          - 
+            title: About us 
+            url: about 
+          - 
+            title: News 
+            url: news 
+          - 
+            title: FAQ 
+            url: faq
+          - 
+            title: Contacts 
+            url: contacts
+      -
+        title: About
+        url: about
+        submenu: false
+      - 
+        title: Referral program
+        url: referral-program
+        submenu: false
+      - 
+        title: Guarantees
+        url: guarantees
+        submenu: false
+      -
+        title: Faq
+        url: faq
+        submenu: false
+      -
+        title: News
+        url: news 
+        submenu: false
+      -
+        title: Contacts
+        url: contacts
+        submenu: false
+      - 
+        title: Rules 
+        url: rules
+        submenu: false
+
+    account: 
+      -
+        title: Account
+        url: cabinet01
+        submenu: false
+      -
+        title: History
+        url: cabinet02
+        submenu: false
+      -
+        title: Rating
+        url: cabinet03
+        submenu: false
+      - 
+        title: Operations
+        url: cabinet04
+        submenu: false
+      - 
+        title: Partners
+        url: cabinet05
+        submenu: false
+      -
+        title: Settings
+        url: cabinet06
+        submenu: false
+      -
+        title: Exit
+        url: false
+        submenu: false
