@@ -27,3 +27,10 @@
 
 ## Commands to use
 Использовать pnpm, если возможно. Все команды документировать в docs.
+
+## Quality bar
+- Цель миграции: визуальное совпадение страниц 1:1 (или максимально близко) с legacy.
+- Любые новые зависимости добавлять только если они реально нужны для миграции.
+
+## Styling rules
+- Tailwind first. Кастомный CSS — только в src/styles/global.css через @layer base/components/utilities.
